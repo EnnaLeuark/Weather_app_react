@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <p>
-        This project was coded by Anne Krauel and is {""}
+        This project was coded by Anne Frenz and is {""}
         <a
           href="https://github.com/EnnaLeuark/Weather_app_react"
           target="_blank"
