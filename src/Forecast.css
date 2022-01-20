@@ -3,7 +3,6 @@
   text-align: center;
   line-height: 70%;
   position: relative;
-  top: -50px;
 }
 
 .forecastDay {
@@ -14,4 +13,5 @@
 .forecastIcon {
   width: 90px;
   padding: -10px 0 0 0;
+  margin: 10px;
 }
