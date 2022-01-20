@@ -6,7 +6,7 @@ export default function Footer() {
       <p>
         This project was coded by Anne Krauel and is {""}
         <a
-          href="https://github.com/EnnaLeuark/weather_app"
+          href="https://github.com/EnnaLeuark/Weather_app_react"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -14,7 +14,7 @@ export default function Footer() {
         </a>
         {""} and hosted on {""}
         <a
-          href="https://infallible-tereshkova-0fcc2d.netlify.app/"
+          href="https://gracious-snyder-10d72c.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
