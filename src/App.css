@@ -1,4 +1,8 @@
 .App {
+  margin-top: 40px;
+}
+
+.frame {
   padding: 30px auto 0;
   border: thick double teal;
   margin: 30px auto 5px;
@@ -41,7 +45,7 @@
   margin-top: 10px;
 }
 
-.frame {
+.CityFrame {
   margin: 0 25px;
 }
 
@@ -67,8 +71,9 @@
   display: block;
   text-align: left;
   line-height: 80%;
-  margin-left: 10px;
+  margin-left: 15px;
   font-size: 14;
+  margin: 0 25px;
 }
 
 #currentTime,
@@ -117,7 +122,7 @@ ul {
   padding: 0;
 }
 
-footer {
+.footer {
   display: block;
   text-align: center;
   font-family: monospace;
