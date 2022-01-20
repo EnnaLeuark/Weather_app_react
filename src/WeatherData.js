@@ -57,13 +57,13 @@ export default function WeatherData() {
             <div className="col-6 additionalData_values">
               <ul>
                 <li>
-                  <span id="feelsLike">30</span>
+                  <span id="feelsLike">30 °C</span>
                 </li>
                 <li>
-                  <span id="humidity">45</span>
+                  <span id="humidity">45 %</span>
                 </li>
                 <li>
-                  <span id="windspeed">37</span>
+                  <span id="windspeed">37 km/h</span>
                 </li>
               </ul>
             </div>
