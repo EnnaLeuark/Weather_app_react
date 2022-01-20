@@ -1,38 +1,126 @@
 .App {
+  padding: 30px auto 0;
+  border: thick double teal;
+  margin: 30px auto 5px;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(254, 255, 165) 0%,
+    rgb(255, 232, 182) 90%
+  );
+  max-width: 800px;
+}
+
+.motto,
+.currentTimeDate,
+.citySearch,
+.currentWeather,
+.tempConversion,
+#degreeTemp,
+.forecastDay,
+.forecastMin-maxTemp,
+.cityName,
+.lastUpdated {
+  font-family: "Pangolin", cursive;
+  color: black;
+  /* color: rgb(17, 17, 78); */
+}
+
+.motto {
+  display: block;
   text-align: center;
+  margin-top: 10px;
+  font-size: 26px;
+  color: rgb(148, 139, 139);
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.citySearch {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frame {
+  margin: 0 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cityName {
+  margin: 15px 0 10px;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.currentWeather {
+  margin: 0 0 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#degreeTemp {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 2;
+  margin-bottom: 3px;
+  text-align: center;
+  display: block;
+}
+
+.currentTimeDate {
+  display: block;
+  text-align: left;
+  line-height: 80%;
+  margin-left: 10px;
+  font-size: 14;
+}
+
+#currentTime,
+#currentDate {
+  text-indent: 15px;
+}
+
+.todayData {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  display: inline;
+}
+.half-circle {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  background-color: none;
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 1px solid gray;
+  border-bottom: 0;
+}
+
+.currentTemp {
+  font-size: 26px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.additionalData_text,
+.additionalData_values {
+  width: 50%;
+  margin-top: 25px;
+}
+
+.additionalData_text {
+  display: block;
+  text-align: right;
+}
+
+.additionalData_values ul {
+  text-align: left;
+  padding: 0;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  font-family: monospace;
+  font-size: small;
+  color: rgb(167, 163, 163);
 }
