@@ -11,8 +11,7 @@ export default function Forecast() {
             src="images/clouds.svg"
             alt="cloudy icon"
           />
-          <span className="forecast-Temp_min">8°</span>/
-          <span className="forecast-Temp_max">15°</span>
+          <p className="forecastMin-maxTemp">8°/ 15°</p>
         </div>
         <div className="col-2">
           <p className="forecastDay">Tue</p>

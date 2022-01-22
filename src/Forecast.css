@@ -17,3 +17,10 @@
   margin: 0;
   margin-top: -10px;
 }
+
+.forecastMin-maxTemp {
+  font-size: 16px;
+  margin-top: 0;
+  font-weight: 300;
+  color: rgb(99, 97, 97);
+}
