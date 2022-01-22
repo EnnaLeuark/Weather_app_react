@@ -8,7 +8,7 @@ export default function Forecast() {
           <p className="forecastDay">Mon</p>
           <img
             className="forecastIcon"
-            src="images/cloudy+forecast+rain+weather+icon-1320196634592211825_0.svg"
+            src="images/clouds.svg"
             alt="cloudy icon"
           />
           <span className="forecast-Temp_min">8°</span>/
@@ -17,7 +17,7 @@ export default function Forecast() {
         <div className="col-2">
           <p className="forecastDay">Tue</p>
           <img
-            src="images/drizzel+rain+weather+icon-1320196635901648252_0.svg"
+            src="images/drizzelrain.svg"
             alt="rain icon"
             className="forecastIcon"
           />
@@ -25,17 +25,13 @@ export default function Forecast() {
         </div>
         <div className="col-2">
           <p className="forecastDay">Wed</p>
-          <img
-            src="images/sun+sunny+weather+icon-1320196635525068067_0.svg"
-            alt="sun icon"
-            className="forecastIcon"
-          />
+          <img src="images/sunny.svg" alt="sun icon" className="forecastIcon" />
           <p className="forecastMin-maxTemp">10°C/16°C</p>
         </div>
         <div className="col-2">
           <p className="forecastDay">Thu</p>
           <img
-            src="images/sunny+temperature+weather+icon-1320196637430890623_0.svg"
+            src="images/sun_rain.svg"
             alt="sun icon"
             className="forecastIcon"
           />
@@ -44,7 +40,7 @@ export default function Forecast() {
         <div className="col-2">
           <p className="forecastDay">Fri</p>
           <img
-            src="images/storm+weather+wind+windy+icon-1320196635706326668_0.svg"
+            src="images/clouds.svg"
             alt="sun icon"
             className="forecastIcon"
           />
@@ -53,7 +49,7 @@ export default function Forecast() {
         <div className="col-2">
           <p className="forecastDay">Sat</p>
           <img
-            src="images/clouds+cloudy+weather+icon-1320196635828207342_0.svg"
+            src="images/rain.svg"
             alt="cloud icon"
             className="forecastIcon"
           />

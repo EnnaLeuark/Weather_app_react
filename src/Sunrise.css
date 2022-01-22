@@ -1,0 +1,15 @@
+.sunrise {
+  position: relative;
+  top: -65px;
+  right: -220px;
+}
+
+.sunset {
+  position: relative;
+  top: -118px;
+  right: -420px;
+}
+
+.sunIcon {
+  width: 30px;
+}

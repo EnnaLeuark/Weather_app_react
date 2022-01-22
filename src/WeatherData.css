@@ -1,0 +1,10 @@
+.currentIcon {
+  width: 100px;
+  margin: -5px auto;
+}
+
+#currentDescription,
+.currentMinMax {
+  font-size: 16px;
+  margin-top: 0;
+}

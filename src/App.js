@@ -3,6 +3,7 @@ import Header from "./Header";
 import CitySearch from "./CitySearch";
 import City from "./City";
 import WeatherData from "./WeatherData";
+import Sunrise from "./Sunrise";
 import Forecast from "./Forecast";
 import "./Forecast.css";
 import Footer from "./Footer";
@@ -15,6 +16,7 @@ function App() {
         <CitySearch />
         <City />
         <WeatherData />
+        <Sunrise />
         <Forecast />
       </div>
       <div className="Footer">

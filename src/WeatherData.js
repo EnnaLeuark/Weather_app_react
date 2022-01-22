@@ -1,4 +1,5 @@
 import React from "react";
+import "./WeatherData.css";
 
 export default function WeatherData() {
   return (
@@ -8,7 +9,7 @@ export default function WeatherData() {
           <div className="currentTemp">
             <div className="row">
               <div className="col-7">
-                <span id="degreeTemp"></span>
+                <span id="degreeTemp">5 °C</span>
               </div>
             </div>
           </div>
@@ -31,7 +32,7 @@ export default function WeatherData() {
               <img
                 className="currentIcon"
                 id="currentIcon"
-                src="images/sun+sunny+weather+icon-1320196635525068067_0.svg"
+                src="images/sunny.svg"
                 alt="weather icon"
               />
             </li>
