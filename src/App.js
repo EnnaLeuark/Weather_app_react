@@ -1,8 +1,6 @@
 import "./App.css";
 import Header from "./Header";
-import CitySearch from "./CitySearch";
-import City from "./City";
-import WeatherData from "./WeatherData";
+import Weather from "./Weather";
 import Sunrise from "./Sunrise";
 import Forecast from "./Forecast";
 import "./Forecast.css";
@@ -13,9 +11,7 @@ function App() {
     <div className="App">
       <div className="frame">
         <Header />
-        <CitySearch />
-        <City />
-        <WeatherData />
+        <Weather />
         <Sunrise />
         <Forecast />
       </div>
