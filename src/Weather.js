@@ -18,8 +18,8 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       feels_like: response.data.main.feels_like,
-      tempMin: Math.round(response.main.temp_min),
-      tempMax: Math.round(response.main.temp_max),
+      tempMin: Math.round(response.data.main.temp_min),
+      tempMax: Math.round(response.data.main.temp_max),
     });
   }
 

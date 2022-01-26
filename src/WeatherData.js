@@ -29,7 +29,7 @@ export default function WeatherData(props) {
               <div>
                 <i className="far fa-calendar-alt"></i>
                 <span className="currentDate">
-                  {""}
+                  {" "}
                   <FormattedDate date={props.data.date} />
                 </span>
               </div>
@@ -68,7 +68,7 @@ export default function WeatherData(props) {
               </div>
               <div className="col-6 additionalData_values">
                 <ul>
-                  <li> xx °C</li>
+                  <li>{props.data.main.feels_like} °C</li>
                   <li>{props.data.humidity} %</li>
                   <li>{props.data.wind} km/h</li>
                 </ul>
