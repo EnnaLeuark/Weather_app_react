@@ -3,6 +3,7 @@ import "./WeatherData.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherTemp from "./WeatherTemp";
+import Sunrise from "./Sunrise";
 
 export default function WeatherData(props) {
   return (
@@ -33,7 +34,7 @@ export default function WeatherData(props) {
                   <FormattedDate date={props.data.date} />
                 </span>
               </div>
-              <div className="dayTime">
+              <div>
                 <i className="far fa-clock"></i>
                 <span className="currentTime">
                   {" "}
@@ -54,7 +55,9 @@ export default function WeatherData(props) {
               </li>
               <li className="currentDescription">{props.data.description}</li>
 
-              <li className="currentMinMax">xx °/ xx °</li>
+              <li className="currentMinMax">
+                {Math.round(props.data.tempMin)}°/ {props.data.tempMax} °
+              </li>
             </ul>
           </div>
           <div className="col-4">
@@ -68,15 +71,16 @@ export default function WeatherData(props) {
               </div>
               <div className="col-6 additionalData_values">
                 <ul>
-                  <li>{props.data.main.feels_like} °C</li>
+                  <li>{Math.round(props.data.feels_like)} °C</li>
                   <li>{props.data.humidity} %</li>
-                  <li>{props.data.wind} km/h</li>
+                  <li>{Math.round(props.data.wind)} km/h</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Sunrise />
     </div>
   );
 }

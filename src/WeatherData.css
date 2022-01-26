@@ -7,19 +7,14 @@
   font-size: 24px;
 }
 
-.currentIcon {
-  width: 100px;
-  margin: -5px auto;
-}
-
-#currentDescription,
-.currentMinMax {
-  font-size: 16px;
-  margin-top: 0;
-}
-
 .currentWeather {
   margin: 0 0 25px;
+}
+
+.currentTemp {
+  font-size: 26px;
+  text-decoration: none;
+  margin-top: -15px;
 }
 
 .degreeTemp {
@@ -34,15 +29,10 @@
 .currentTimeDate {
   display: block;
   text-align: left;
-  line-height: 80%;
+  line-height: 1.7;
   margin-left: 15px;
 
   margin: 0 25px;
-}
-
-.currentTime,
-.currentDate {
-  text-indent: 15px;
 }
 
 .todayData {
@@ -61,10 +51,15 @@
   border-bottom: 0;
 }
 
-.currentTemp {
-  font-size: 26px;
-  text-decoration: none;
-  margin-top: -15px;
+.currentIcon {
+  width: 100px;
+  margin: -5px auto;
+}
+
+.currentDescription,
+.currentMinMax {
+  font-size: 16px;
+  margin-top: 0;
 }
 
 ul {
