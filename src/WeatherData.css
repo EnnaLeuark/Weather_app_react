@@ -22,7 +22,7 @@
   margin: 0 0 25px;
 }
 
-#degreeTemp {
+.degreeTemp {
   font-weight: normal;
   font-size: 28px;
   line-height: 2;
@@ -36,7 +36,7 @@
   text-align: left;
   line-height: 80%;
   margin-left: 15px;
-  font-size: 14;
+
   margin: 0 25px;
 }
 
@@ -64,6 +64,7 @@
 .currentTemp {
   font-size: 26px;
   text-decoration: none;
+  margin-top: -15px;
 }
 
 ul {

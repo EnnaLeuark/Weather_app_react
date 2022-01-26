@@ -2,13 +2,14 @@ import React from "react";
 import "./WeatherData.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherData(props) {
   return (
-    <div>
+    <div className="weatherInfo">
       <div className="CityFrame">
         <div className="cityName">
-          <p>{props.data.city}, DE</p>
+          <p>{props.data.city}</p>
         </div>
       </div>
       <div className="currentWeather">
@@ -17,26 +18,28 @@ export default function WeatherData(props) {
             <div className="currentTemp">
               <div className="row">
                 <div className="col-7">
-                  <span id="degreeTemp">5 °C</span>
+                  <div className="degreeTemp">
+                    <WeatherTemp celsius={props.data.temperature} />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="currentTimeDate">
               <p className="lastUpdated">last updated:</p>
-              <p>
+              <div>
                 <i className="far fa-calendar-alt"></i>
                 <span className="currentDate">
                   {""}
                   <FormattedDate date={props.data.date} />
                 </span>
-              </p>
-              <p className="dayTime">
+              </div>
+              <div className="dayTime">
                 <i className="far fa-clock"></i>
                 <span className="currentTime">
                   {" "}
                   <FormattedTime time={props.data.time} />
                 </span>
-              </p>
+              </div>
             </div>
           </div>
           <div className="col-4 todayData half-circle">
@@ -53,8 +56,7 @@ export default function WeatherData(props) {
 
               <li>
                 <span className="currentMinMax">
-                  <span id="currentTemp_min">7°</span>/
-                  <span id="currentTemp_max">11°</span>
+                  <span>5°</span>/<span>11°</span>
                 </span>
               </li>
             </ul>
@@ -70,9 +72,7 @@ export default function WeatherData(props) {
               </div>
               <div className="col-6 additionalData_values">
                 <ul>
-                  <li>
-                    <span id="feelsLike">30 °C</span>
-                  </li>
+                  <li>{props.data.feels_like}</li>
                   <li>
                     <span id="humidity">45 %</span>
                   </li>
