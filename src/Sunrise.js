@@ -1,5 +1,5 @@
 import React from "react";
-import FormattedSunrise from "./FormattedSunrise";
+
 import "./Sunrise.css";
 
 export default function Sunrise(props) {
