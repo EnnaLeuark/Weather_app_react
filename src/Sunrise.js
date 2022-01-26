@@ -12,12 +12,12 @@ export default function Sunrise() {
             alt="sunrise icon"
           />
           <br />
-          <span id="sunriseTime">05:43</span>
+          <span id="sunriseTime">xx:xx</span>
         </div>
         <div className="sunset">
           <img src="images/sunrise.svg" className="sunIcon" alt="sunset icon" />
           <br />
-          <span id="sunsetTime">21:51</span>
+          <span id="sunsetTime">xx:xx</span>
         </div>
       </div>
     </>

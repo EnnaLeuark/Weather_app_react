@@ -52,13 +52,9 @@ export default function WeatherData(props) {
                   alt="weather icon"
                 />
               </li>
-              <li id="currentDescription">slightly cloudy</li>
+              <li className="currentDescription">{props.data.description}</li>
 
-              <li>
-                <span className="currentMinMax">
-                  <span>5°</span>/<span>11°</span>
-                </span>
-              </li>
+              <li className="currentMinMax">xx °/ xx °</li>
             </ul>
           </div>
           <div className="col-4">
@@ -72,13 +68,9 @@ export default function WeatherData(props) {
               </div>
               <div className="col-6 additionalData_values">
                 <ul>
-                  <li>{props.data.feels_like}</li>
-                  <li>
-                    <span id="humidity">45 %</span>
-                  </li>
-                  <li>
-                    <span id="windspeed">37 km/h</span>
-                  </li>
+                  <li> xx °C</li>
+                  <li>{props.data.humidity} %</li>
+                  <li>{props.data.wind} km/h</li>
                 </ul>
               </div>
             </div>
