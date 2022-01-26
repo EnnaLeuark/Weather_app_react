@@ -3,13 +3,13 @@ import "./WeatherData.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherTemp from "./WeatherTemp";
-import Sunrise from "./Sunrise";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData(props) {
   return (
     <div className="weatherInfo">
       <div className="CityFrame">
-        <div className="cityName">
+        <div className="cityName ">
           <p>{props.data.city}</p>
         </div>
       </div>
@@ -46,12 +46,7 @@ export default function WeatherData(props) {
           <div className="col-4 todayData half-circle">
             <ul className="todayData">
               <li>
-                <img
-                  className="currentIcon"
-                  id="currentIcon"
-                  src="images/sunny.svg"
-                  alt="weather icon"
-                />
+                <WeatherIcon code={props.data.icon} size={64} />
               </li>
               <li className="currentDescription">{props.data.description}</li>
 
@@ -80,7 +75,6 @@ export default function WeatherData(props) {
           </div>
         </div>
       </div>
-      <Sunrise />
     </div>
   );
 }

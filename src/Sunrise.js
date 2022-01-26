@@ -1,7 +1,8 @@
 import React from "react";
+import FormattedSunrise from "./FormattedSunrise";
 import "./Sunrise.css";
 
-export default function Sunrise() {
+export default function Sunrise(props) {
   return (
     <>
       <div className="sunIcons">
@@ -12,12 +13,19 @@ export default function Sunrise() {
             alt="sunrise icon"
           />
           <br />
-          <span id="sunriseTime">xx:xx</span>
+          <span>
+            {" "}
+            xx:xx
+            {/* <FormattedSunrise time={props.data.sunRise} /> */}
+          </span>
         </div>
         <div className="sunset">
           <img src="images/sunrise.svg" className="sunIcon" alt="sunset icon" />
           <br />
-          <span id="sunsetTime">xx:xx</span>
+          <span>
+            xx:xx
+            {/* <FormattedSunrise time={props.data.sunSet} /> */}
+          </span>
         </div>
       </div>
     </>
