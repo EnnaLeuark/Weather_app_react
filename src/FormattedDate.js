@@ -24,8 +24,8 @@ export default function FormattedDate() {
   let year = now.getFullYear();
 
   return (
-    <div>
+    <span>
       {day}.{monthNumber}.{year}
-    </div>
+    </span>
   );
 }

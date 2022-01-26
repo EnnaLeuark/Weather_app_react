@@ -13,8 +13,8 @@ export default function FormattedTime() {
   }
 
   return (
-    <div>
+    <span>
       {hours}:{minutes}
-    </div>
+    </span>
   );
 }
