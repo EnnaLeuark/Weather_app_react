@@ -17,9 +17,9 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
-      /* feels_like: response.data.feels_like,
+      feels_like: response.data.main.feels_like,
       tempMin: Math.round(response.main.temp_min),
-      tempMax: Math.round(response.main.temp_max), */
+      tempMax: Math.round(response.main.temp_max),
     });
   }
 
