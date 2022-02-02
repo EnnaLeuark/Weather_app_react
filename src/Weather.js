@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherData from "./WeatherData";
 import Sunrise from "./Sunrise";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -8,6 +9,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -21,8 +23,8 @@ export default function Weather(props) {
       feels_like: response.data.main.feels_like,
       tempMin: Math.round(response.data.main.temp_min),
       tempMax: Math.round(response.data.main.temp_max),
-      sunRise: response.data.sys.sunrise * 1000,
-      sunSet: response.data.sys.sunset * 1000,
+      /* sunRise: response.data.sys.sunrise * 1000,
+      sunSet: response.data.sys.sunset * 1000, */
     });
   }
 
@@ -69,6 +71,7 @@ export default function Weather(props) {
             </div>
             <WeatherData data={weatherData} />
             <Sunrise data={weatherData} />
+            <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
