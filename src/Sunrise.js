@@ -2,8 +2,8 @@ import React from "react";
 import "./Sunrise.css";
 
 export default function Sunrise(props) {
-  function formatTime() {
-    let time = new Date();
+  function formatTime(timestamp) {
+    let time = new Date(timestamp);
     let hours = time.getHours();
     if (hours < 10) {
       hours = `0${hours}`;
