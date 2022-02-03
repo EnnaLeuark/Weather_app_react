@@ -24,8 +24,8 @@ export default function Weather(props) {
       feels_like: response.data.main.feels_like,
       tempMin: Math.round(response.data.main.temp_min),
       tempMax: Math.round(response.data.main.temp_max),
-      /* sunRise: response.data.sys.sunrise * 1000,
-      sunSet: response.data.sys.sunset * 1000, */
+      sunRise: new Date(response.data.sys.sunrise * 1000),
+      sunSet: new Date(response.data.sys.sunset * 1000),
     });
   }
 
@@ -72,6 +72,7 @@ export default function Weather(props) {
             </div>
             <WeatherData data={weatherData} />
             <Sunrise data={weatherData} />
+
             <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
