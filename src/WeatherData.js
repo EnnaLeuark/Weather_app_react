@@ -10,7 +10,9 @@ export default function WeatherData(props) {
     <div className="weatherInfo">
       <div className="CityFrame">
         <div className="cityName ">
-          <p>{props.data.city}</p>
+          <p>
+            {props.data.city.toUpperCase()}, {props.data.country}
+          </p>
         </div>
       </div>
       <div className="currentWeather">
